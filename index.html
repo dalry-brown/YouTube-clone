@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/99e218a8ef.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="youtube-logo-png-2070.png">
+    <title>YouTube</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="left">
+                <i class="fa-solid fa-bars menu"></i>
+                <div class="logo">
+                    <img src="youtube-logo-png-2070.png" alt="youtube icon">
+                    <span>YouTube</span><sup>GH</sup>
+                </div>
+                
+            </div>
+            <div class="middle">
+                <div class="search">
+                    <input type="text" name="search" id="search-btn" placeholder="Search">
+                    <label for="search-btn">
+                    <i class="fa-solid fa-magnifying-glass mike"></i>
+                    </label>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+                    <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+                    <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+                  </svg>
+            </div>
+            <div class="right">
+                <svg class="icons" xmlns="http://www.w3.org/2000/svg" width="35" height="16" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
+                  </svg>
+                <svg class="icons" xmlns="http://www.w3.org/2000/svg" width="35" height="16" fill="currentColor" class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
+                    <path d="M4 2v2H2V2h2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zM9 2v2H7V2h2zm5 0v2h-2V2h2zM4 7v2H2V7h2zm5 0v2H7V7h2zm5 0h-2v2h2V7zM4 12v2H2v-2h2zm5 0v2H7v-2h2zm5 0v2h-2v-2h2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-2z"/>
+                  </svg>
+                <svg class="icons"xmlns="http://www.w3.org/2000/svg" width="35" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                  </svg>
+                <input type="submit" value="SIGN IN">
+            </div>
+        </div>
+    </header>
+
+
+    <aside>
+        <div class="aside-container">
+        <ul>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="50" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+              </svg><a href="#">Home</a></li>
+            <li><img src="explore.png" alt="explore icon"><a href="#">Explore</a></li>
+            <li><img src="shorts.png" alt="shorts icon"><a href="#">Shorts</a></li>
+            <li><img src="subscriptions.png" alt="subscriptions icon"><a href="#">Subscription</a></li>
+        </ul>
+        </div>
+        <hr>
+        <div class="aside-container">
+        <ul>
+            <li><img src="library.png" alt="library icon"><a href="#">Library</a></li>
+            <li><img src="history.png" alt="history icon"><a href="#">History</a></li>
+            <li><img src="video.png" alt="video icon"><a href="#">Your Video</a></li>
+            <li><img src="watch_later.png" alt="watch later icon"><a href="#">Watch Later</a></li>
+            <li><img src="like.png" alt="like icon"><a href="#">Like</a></li>
+            <li><img src="more.png" alt="more icon"><a href="#">Show more</a></li>
+        </ul>
+        </div>
+        <hr>
+
+        <div class="aside-container">
+        <ul>
+            <li><a href="#">Subscription</a></li>
+            <li><a href="#">Traversy Media</a></li>
+            <li><a href="#">Motivation Madness</a></li>
+            <li><a href="#">Motivation2study</a></li>
+            <li><a href="#">The Organic Chemistry tutor</a></li>
+            <li><a href="#">Goal Cast</a></li>
+            <li><a href="#">Video Advice</a></li>
+            <li><a href="#">Show 22 more</a></li>
+        </ul>
+        </div>
+        <hr>
+        <div class="aside-container">
+        <ul> 
+            <li><img src="more.png" alt="more icon"><a href="#">MORE FROM YOUTUBE</a></li>
+            <li><img src="gaming.png" alt="gaming icon"><a href="#">Gaming</a></li>
+            <li><img src="live.png" alt="live icon"><a href="#">Live</a></li>
+            <li><img src="sports.png" alt="sports icon"><a href="#">Sports</a></li>
+        </ul>
+        </div>
+        <hr>
+        <div class="aside-container">
+        <ul>
+            <li><img src="setting.png" alt="setting icon"><a href="#">Settings</a></li>
+            <li><img src="report.png" alt="explore icon"><a href="#">Report history</a></li>
+            <li><img src="help.png" alt="help icon"><a href="#">Help</a></li>
+            <li><img src="feedback.png" alt="feedback icon"><a href="#">Send feedback</a></li>
+        </ul>
+        </div>
+        <hr>
+        <div class="aside-container">
+        <ul>
+            <li><a href="#">
+                <p>AboutPressCopyrightContact usCreatorsAdvertiseDevelopers</p>
+            <p>TermsPrivacyPolicy & SafetyHow YouTube worksTest new features</p>
+            <a>© 2022 Google LLC</a>
+            </a></li>
+        </ul>
+        </div>
+    </aside>
+    
+
+    <main>
+        <div class="main-container">
+            <div class="top">
+                <ul>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Mixes</a></li>
+                    <li><a href="#">Computer</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Motivation</a></li>
+                    <li><a href="#">Anime</a></li>
+                    <li><a href="#">IOS</a></li>
+                    <li><a href="#">Andriod</a></li>
+                    <li><a href="#">Stocks</a></li>
+                    <li><a href="#">Debate</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="grid-container">
+                <section class="inner">
+                    <div><img src="movie6.jpg" alt=""></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b>Jordan Peterson: Advice for the youth</b> <br>
+                                709k views . 7 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div><img src="movie7.jpg" alt=""></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b>FreeCodeCamp Database Systems</b> <br>
+                                709k views . 7 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div><img src="movie3.jpg" alt=""></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b>JavaScript for beginners complete course</b> <br>
+                                709k views . 7 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div><img src="movie4.jpg" alt=""></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b>How to create a future worth getting excited about</b> <br>
+                                709k views . 7 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div><img src="movie1.jpg" alt=""></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b>FreeCodeCamp python complete course by...</b> <br>
+                                709k views . 7 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div><img src="movie2.jpg" alt=""></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b>Organic Chemistry Tutor: Redox Reactions</b> <br>
+                                709k views . 7 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div><img src="movie5.jpg" alt="techlead"></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b>TechLead: How I got fired from facebook</b> <br>
+                                709k views . 7 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div><img src="movie8.jpg" alt="Clever programmer"></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b>Clever programmer: Let's learn python together</b> <br>
+                                709k views . 7 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div><img src="movie9.jpg" alt="Motivation madness"></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b>After you watch this your life will change</b> <br>
+                                709k views . 7 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div><img src="movie10.jpg" alt="My hero academia"></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b>My hero academia: top Ten scenes</b> <br>
+                                709k views . 7 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div><img src="movie11.jpg" alt="FreeCodeCamp"></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b>Data Structures and Algorithm</b> <br>
+                                709k views . 7 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div><img src="movie12.jpg" alt="Havard"></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b>Havard Computer Science: CS50 course</b> <br>
+                                709k views . 7 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div>
+                    </div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div></div>
+                    <div>
+                        <div class="box1">
+                            <span>0</span>
+                            <div class="box2">
+                                <p><b></b></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                
+                
+                
+            </div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
